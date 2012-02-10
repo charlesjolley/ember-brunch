@@ -1,13 +1,16 @@
 {languages, plugins} = require 'brunch-extensions'
-{LESSLanguage} = require 'brunch-extensions/lib/languages/less'
+#{LESSLanguage} = require 'brunch-extensions/lib/languages/less'
 {HandlebarsLanguage} = require './brunch/handlebars_language'
 {ManifestPlugin} = require './brunch/manifest_plugin'
+{LESSLanguage} = require './brunch/less_language'
 
 # Make config loadable via require() for brunch.
 exports.config =
   # Available plugins:
   # * AssetsPlugin: copy `app/assets` contents to `build/`
   plugins: [plugins.AssetsPlugin, ManifestPlugin]
+
+  less_paths: ['twitter-bootstrap/less']
 
   # Contains a list of output filenames that your application would generate.
   # Format:
@@ -39,5 +42,4 @@ exports.config =
         '\.css$': languages.CSSLanguage
         '\.less$': LESSLanguage
       order:
-        before: ['vendor/styles/normalize.css']
-        after: ['vendor/styles/helpers.css']
+        before: []

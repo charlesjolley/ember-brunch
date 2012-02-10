@@ -16,7 +16,8 @@
   },
   "dependencies": {
     "brunch-extensions": "0.1.0",
-    "async": "latest"
+    "async": "0.1.15",
+    "less":  "1.2.1"
   },
   "devDependencies": {
     
