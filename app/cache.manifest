@@ -1,0 +1,9 @@
+CACHE MANIFEST
+# version {VERSION}
+
+index.html
+styles/app.css
+scripts/app.js
+
+NETWORK:
+*
