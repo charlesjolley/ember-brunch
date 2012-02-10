@@ -9,7 +9,8 @@ module.exports = HELPERS.Application.create({
     $('#loading').remove();
 
     Em.View.create({
-      templateName: 'views/templates/home'
+      templateName: 'views/templates/home',
+      classNames: ['container']
     }).append();
 
     console.log('READY');
