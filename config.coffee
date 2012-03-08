@@ -33,8 +33,8 @@ exports.config =
         before: [
           'vendor/scripts/console-helper.js'
           'vendor/scripts/jquery-1.7.js'
-          'vendor/scripts/ember-0.9.4.js'
-          'vendor/scripts/ember-data.js'
+          'vendor/scripts/ember-latest.js'
+          'vendor/scripts/ember-data-latest.js'
         ]
 
     'styles/app.css':

@@ -4,7 +4,7 @@ require('helpers');
 App = Em.Application.create({
 
   store: DS.Store.create({
-
+    revision: 3
   }),
 
   // invoked when the app is ready to start. add any necessary code
