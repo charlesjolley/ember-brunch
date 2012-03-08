@@ -1,7 +1,11 @@
 
-var HELPERS = require('helpers');
+require('helpers');
 
-module.exports = HELPERS.Application.create({
+App = Em.Application.create({
+
+  store: DS.Store.create({
+
+  }),
 
   // invoked when the app is ready to start. add any necessary code
   // here to kick things off. Be sure to remove your loading view.

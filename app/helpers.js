@@ -2,7 +2,10 @@
  
 var appCache = window.applicationCache;
 
-exports.Application = Em.Application.extend({
+// Update base application to make it appCache aware
+Em._Application = Em.Application;
+
+Em.Application = Em._Application.extend({
 
   UPDATE_PERIOD: 50000,
 
@@ -33,7 +36,7 @@ exports.Application = Em.Application.extend({
   },
 
   // check for an update
-  update: function() {
+  checkUpdate: function() {
     appCache.update();
   },
 

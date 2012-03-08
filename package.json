@@ -15,7 +15,7 @@
     "start": "brunch watch --server"
   },
   "dependencies": {
-    "brunch-extensions": "0.1.0",
+    "brunch-extensions": "git://github.com/brunch/brunch-extensions.git#master",
     "async": "0.1.15",
     "less":  "1.2.1"
   },

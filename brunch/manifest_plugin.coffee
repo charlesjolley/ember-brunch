@@ -8,11 +8,10 @@ class exports.ManifestPlugin extends BasePlugin
 
   constructor: (@config) ->
 
-  load: (done) ->
+  load: (files, done) ->
     srcPath = PATH.resolve @getRootPath  'app', 'cache.manifest'
     dstPath = PATH.resolve @getBuildPath 'cache.manifest'
     body = FS.readFileSync srcPath, 'utf8'
     body = body.replace /\{VERSION\}/, Date.now()
     FS.writeFileSync dstPath, body
-    console.log "writing to #{dstPath}"
-    done()
+    done null, files

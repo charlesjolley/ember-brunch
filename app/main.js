@@ -1,3 +1,5 @@
 
-// require templates here to load them.
 require('app');
+require('models');
+require('controllers');
+require('views');
